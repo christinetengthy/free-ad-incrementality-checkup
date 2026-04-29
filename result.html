@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="查看免費廣告增量健檢測驗結果，了解下一步該如何判斷廣告是否真的帶來新增營收。">
+  <title>測驗結果｜免費廣告增量健檢測驗</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="result">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="免費廣告增量健檢測驗首頁">
+      <span class="brand-mark">ads.christine</span>
+      <span>免費廣告增量健檢測驗</span>
+    </a>
+  </header>
+
+  <main class="section">
+    <div class="container result-layout">
+      <section class="result-hero" id="resultHero" aria-labelledby="resultTitle">
+        <p class="eyebrow">測驗結果</p>
+        <div class="score-pill" id="scorePill" aria-label="健檢風險分數">
+          <span>風險分數</span>
+          <strong><span id="scoreValue">0</span> / 100</strong>
+        </div>
+        <p class="score-note">分數越高，代表越需要先檢查廣告是否真的帶來新增營收。</p>
+        <h1 id="resultTitle"></h1>
+        <p class="lead" id="resultSummary"></p>
+      </section>
+
+      <section class="result-detail" aria-labelledby="meaningTitle">
+        <h2 id="meaningTitle">這代表什麼</h2>
+        <p id="resultMeaning"></p>
+      </section>
+
+      <section class="result-detail" aria-labelledby="nextStepTitle">
+        <h2 id="nextStepTitle">下一步建議</h2>
+        <p id="resultNextStep"></p>
+      </section>
+
+      <div class="cta-band">
+        <a class="button primary-button pulse-button" id="resultCta" href="https://docs.google.com/forms/d/1P2xc1AzjeNA1UJE9m71t5a1RciQF1xJ7LQqhmJsjbtM/edit" data-track-click="consultation_cta_click" target="_blank" rel="noopener">預約 20 分鐘廣告健檢</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

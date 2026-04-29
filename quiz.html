@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="完成免費廣告增量健檢測驗，初步判斷帳戶是否適合做增量測試。">
+  <title>測驗｜免費廣告增量健檢測驗</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="quiz">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="免費廣告增量健檢測驗首頁">
+      <span class="brand-mark">ads.christine</span>
+      <span>免費廣告增量健檢測驗</span>
+    </a>
+  </header>
+
+  <main class="section">
+    <div class="container narrow">
+      <section class="quiz-shell" aria-labelledby="quiz-question">
+        <div class="progress-meta">
+          <span id="questionCounter">第 1 題 / 共 10 題</span>
+          <span id="progressPercent">10%</span>
+        </div>
+        <div class="progress-track" aria-hidden="true">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+
+        <form id="quizForm">
+          <fieldset class="question-block">
+            <legend id="quiz-question"></legend>
+            <div class="options-list" id="optionsList"></div>
+          </fieldset>
+
+          <div class="button-row">
+            <button class="button secondary-button" type="button" id="prevButton">上一題</button>
+            <button class="button primary-button" type="button" id="nextButton" disabled>下一題</button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
